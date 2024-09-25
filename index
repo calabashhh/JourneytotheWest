@@ -24,13 +24,14 @@
               zoom: 6
           });
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+               attribution: '@ <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                maxZoom: 18,
                minZoom: 3
           }).addTo(map);
         
           var marker1 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
           var marker2 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
+
           var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20176.jpg?raw=true" alt="Carved Caves Matisi" width="250">';
           var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20106.jpg?raw=true" alt="Santan Entrance to the Valley" width="250">';
           
