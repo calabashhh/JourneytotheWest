@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+           crossorigin=""/>
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+           crossorigin=""></script>
+    </head>
+    <body>
+        <div id="map" style="height: 500px"></div>
+        <script type="text/javascript">
+          var MountianIcon = L.icon({
+              iconUrl: 'mountianicon.png', // url that links to the icon image file, saved in the same folder as the current page 
+              iconSize:     [38, 38], // size of the icon image in pixels
+              iconAnchor:   [19, 19], // the top left corner of the icon will be aligned so that this point is at the marker's geographical location
+              popupAnchor:  [0, -10] // point from which the popup should open, relative to the iconAnchor
+          });
+
+          var map = L.map('map', {
+              center: [36.0627461,103.3171649],
+              zoom: 6
+          });
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+               attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+               maxZoom: 18,
+               minZoom: 3
+          }).addTo(map);
+        
+          var marker1 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
+          var marker2 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
+          var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20176.jpg?raw=true" alt="Carved Caves Matisi" width="250">';
+          var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20106.jpg?raw=true" alt="Santan Entrance to the Valley" width="250">';
+          
+          marker1.bindPopup('<p style="color:blue; font-weight:bold"> Matisi, Gansu </p>' + pic1);
+          marker2.bindPopup('<p style="color:seagreen; font-weight:bold"> Santan Scenic Spot Entrance</p>' + pic2);
+        </script>
+   </body>
+</html>
