@@ -29,14 +29,14 @@
                minZoom: 4
             }).addTo(map);
         
-            var marker1 = L.marker([41.98,-87.72], {icon: universityIcon}).addTo(map);
-            var marker2 = L.marker([30.44,-84.3], {icon: universityIcon}).addTo(map); 
+            var marker1 = L.marker([41.98,-87.72], {icon: MountianIcon}).addTo(map);
+            var marker2 = L.marker([30.44,-84.3], {icon: MountianIcon}).addTo(map); 
           var pic1 = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/NEIU_Sci.jpg/1024px-NEIU_Sci.jpg" alt="BBH" width="250">';
           var pic2 = '<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/FSUWestcottBuilding-2.jpg" alt="FSU" width="250">';
           
 
-            var universityIcon = L.icon({
-              iconUrl: 'university.png', // url that links to the icon image file, saved in the same folder as the current page 
+            var MountianIcon = L.icon({
+              iconUrl: 'mountianicon.png', // url that links to the icon image file, saved in the same folder as the current page 
                iconSize:     [38, 38], // size of the icon image in pixels
              iconAnchor:   [19, 19], // the top left corner of the icon will be aligned so that this point is at the marker's geographical location
               popupAnchor:  [0, -10] // point from which the popup should open, relative to the iconAnchor
