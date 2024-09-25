@@ -20,19 +20,19 @@
 
           var map = L.map('map', {
               center: [34.7844896,114.2524124,12.81],
-              zoom: 4
+              zoom: 16
           });
 
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                attribution: '@ <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-               maxZoom: 4,
-               minZoom: 4
+               maxZoom: 16,
+               minZoom: 16
             }).addTo(map);
         
-            var marker1 = L.marker([41.98,-87.72], {icon: MountianIcon}).addTo(map);
-            var marker2 = L.marker([30.44,-84.3], {icon: MountianIcon}).addTo(map); 
-          var pic1 = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/NEIU_Sci.jpg/1024px-NEIU_Sci.jpg" alt="BBH" width="250">';
-          var pic2 = '<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/FSUWestcottBuilding-2.jpg" alt="FSU" width="250">';
+            var marker1 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
+            var marker2 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
+          var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20176.jpg" alt="Carved Caves Matisi" width="250">';
+          var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20106.jpg" alt="Santan Entrance to the Valley" width="250">';
           
 
             var MountianIcon = L.icon({
@@ -42,8 +42,8 @@
               popupAnchor:  [0, -10] // point from which the popup should open, relative to the iconAnchor
             });
 
-          marker1.bindPopup('<p style="color:blue; font-weight:bold"> work at NEIU </p>' + pic1);
-          marker2.bindPopup('<p style="color:seagreen; font-weight:bold"> went to FSU for graduate school</p>' + pic2);
+          marker1.bindPopup('<p style="color:blue; font-weight:bold"> Matisi, Gansu </p>' + pic1);
+          marker2.bindPopup('<p style="color:seagreen; font-weight:bold"> Santan Scenic Spot Entrance</p>' + pic2);
         
 
         </script>
