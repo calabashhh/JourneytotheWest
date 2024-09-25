@@ -19,7 +19,7 @@
         <script type="text/javascript">
 
           var map = L.map('map', {
-              center: [38.16, -96.96],
+              center: [34.7844896,114.2524124,12.81],
               zoom: 4
           });
 
