@@ -30,15 +30,54 @@
               iconAnchor:   [19, 19], // the top left corner of the icon will be aligned so that this point is at the marker's geographical location
               popupAnchor:  [0, -10] // point from which the popup should open, relative to the iconAnchor
           });
-        
-          var marker1 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
-          var marker2 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
 
-          var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest176.jpg?raw=true" alt="Carved Caves Matisi" width="250">';
-          var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest106.jpg?raw=true" alt="Santan Entrance to the Valley" width="250">';
+            var StreetlifeIcon = L.icon({
+              iconUrl: 'streetlifeicon.png', // url that links to the icon image file, saved in the same folder as the current page 
+              iconSize:     [24, 24], // size of the icon image in pixels
+              iconAnchor:   [19, 19], // the top left corner of the icon will be aligned so that this point is at the marker's geographical location
+              popupAnchor:  [0, -10] // point from which the popup should open, relative to the iconAnchor
+          });
+        
+          var marker01 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
+          var marker02 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
+            var marker03 = L.marker([23.3071366,120.3051724], {icon: StreetlifeIcon}).addTo(map);
+            var marker04 = L.marker([31.2234155,121.4412486], {icon: StreetlifeIcon}).addTo(map);
+            var marker05 = L.marker([36.2590461,117.1036683], {icon: MountianIcon}).addTo(map);
+            var marker06= L.marker([34.7846143,114.3584723], {icon: StreetlifeIcon}).addTo(map);
+            var marker07 = L.marker([34.7524631,113.0217015], {icon: MountianIcon}).addTo(map);
+            var marker08 = L.marker([34.7457371,113.6764442,3033], {icon: StreetlifeIcon}).addTo(map);
+            var marker09 = L.marker([34.8220942,114.3355714], {icon: StreetlifeIcon}).addTo(map);
+            var marker10 = L.marker([31.2232376,121.494391], {icon: StreetlifeIcon}).addTo(map);
+            var marker11 = L.marker([31.1959979,121.4654465], {icon: StreetlifeIcon}).addTo(map);
+            
+
+          var pic01 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest176.jpg?raw=true" alt="Carved Caves Matisi" width="350">';
+          var pic02 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest106.jpg?raw=true" alt="Santan Entrance to the Valley" width="350">';
+            var pic03 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Yenshueifestivities.jpg?raw=true" alt="YanShui Firework Festival" width="350">';
+            var pic04 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/ShanghaiShikumenbalcony.JPG?raw=true" alt="Shanghai Shikumen balcony" width="350">';
+            var pic05 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/TaishanOfferings.jpg?raw=true" alt="Mt Taishan Offerings" width="350">';
+            var pic06 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/KaifengGhostMarket.jpg?raw=true" alt="Kaifeng Ghost Market" width="350">';
+            var pic07 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/GongyiSongling.jpg?raw=true" alt="Gongyi Song Dynasty Imperial Tombs" width="350">';
+            var pic08 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/Zhengzhou2007.jpg?raw=true" alt="Zhengzhou Streetscape" width="350">';
+            var pic09 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/KaifengStreetFood.jpg?raw=true" alt="Kaifeng Street Food" width="350">';
+            var pic10 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/Shanghai1930sShikumen.JPG?raw=true" alt="Shanghai 1930s Shikumen" width="350">';
+            var pic11 = '<img src="https://https://github.com/calabashhh/JourneytotheWest/blob/main/ShangahiArtDeco.JPG?raw=true" alt="Shanghai Art Deco" width="350">';
+            
           
-          marker1.bindPopup('<p style="color:blue; font-weight:bold"> Matisi, Gansu </p>' + pic1);
-          marker2.bindPopup('<p style="color:seagreen; font-weight:bold"> Santan Scenic Spot Entrance</p>' + pic2);
+          marker01.bindPopup('<p style="color:blue; font-weight:bold"> Matisi, Gansu </p>' + pic01);
+          marker02.bindPopup('<p style="color:seagreen; font-weight:bold"> Santan Scenic Spot Entrance</p>' + pic02);
+            marker03.bindPopup('<p style="color:red; font-weight:bold">YanShui Firework Festival</p>' + pic03);
+            marker04.bindPopup('<p style="color:blue; font-weight:bold">Shanghai Shikumen balcony</p>' + pic04);
+            marker05.bindPopup('<p style="color:orange; font-weight:bold">Mt Taishan Offerings</p>' + pic05);
+            marker06.bindPopup('<p style="color:red; font-weight:bold">Kaifeng Ghost Market</p>' + pic06);
+            marker07.bindPopup('<p style="color:red; font-weight:bold">Gongyi Song Dynasty Imperial Tombs</p>' + pic07);
+            marker08.bindPopup('<p style="color:seagreen; font-weight:bold">Zhengzhou Streetscape</p>' + pic08);
+            marker09.bindPopup('<p style="color:orange; font-weight:bold"> Kaifeng Street Food</p>' + pic09);
+            marker10.bindPopup('<p style="color:gray; font-weight:bold"> Shanghai 1930s Shikumen</p>' + pic10);
+            marker11.bindPopup('<p style="color:red; font-weight:bold">Shanghai Art Deco</p>' + pic11);
+           
+            
+            
         </script>
    </body>
 </html>
