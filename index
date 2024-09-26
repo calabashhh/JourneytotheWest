@@ -34,8 +34,8 @@
           var marker1 = L.marker([38.4650311,100.4121329], {icon: MountianIcon}).addTo(map);
           var marker2 = L.marker([33.6604612,106.2226348], {icon: MountianIcon}).addTo(map); 
 
-          var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20176.jpg?raw=true" alt="Carved Caves Matisi" width="250">';
-          var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/Journey%20to%20the%20West%20106.jpg?raw=true" alt="Santan Entrance to the Valley" width="250">';
+          var pic1 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest176.jpg?raw=true" alt="Carved Caves Matisi" width="250">';
+          var pic2 = '<img src="https://github.com/calabashhh/JourneytotheWest/blob/main/JourneytotheWest106.jpg?raw=true" alt="Santan Entrance to the Valley" width="250">';
           
           marker1.bindPopup('<p style="color:blue; font-weight:bold"> Matisi, Gansu </p>' + pic1);
           marker2.bindPopup('<p style="color:seagreen; font-weight:bold"> Santan Scenic Spot Entrance</p>' + pic2);
